@@ -1,0 +1,187 @@
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/*Wrapper surrounding the days of the month*/
+#wrapper{
+	padding-left: 30px;
+	padding-right: 0px;
+}
+/* dropDown css for day, month, year in addevent box. Inline*/
+#dropDown{
+display: inline-block;
+display: inline;
+}
+
+#month, #day{
+	
+}
+
+/*Title box showing Month | Year */
+.month {
+	background: url("monthPics/12.jpg");
+	background-color: black;
+	background-opacity: 0.5;
+	background-position: center;
+	text-align: center;
+	padding: 75px 25px;
+	width: 100%;
+}
+/*Alignment of Month | Year text */
+.month ul {
+	margin: 0;
+	padding: 0;
+}
+/*Design of Month | Year text */
+.month ul li {
+	color: black;
+	font-size: 40px;
+	font-weight: 900;
+	text-transform: uppercase;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+	letter-spacing: 3px;
+
+}
+/*Left Arrow in Month | Year Box */
+.month .prev {
+	float: left;
+	padding-top: 10px;
+}
+/*Right Arrow in Month | Year Box */
+.month .next {
+	float: right;
+	padding-top: 10px;
+}
+/*Background for Days of the Week */
+.weekdays {
+	background-color: black;
+	padding: 10px;
+	margin: 0;
+}
+/*Days of the week text "Mo Tu We Th Fr Sa Su" */
+.weekdays li {
+	color: white;
+	display: inline-block;
+	text-align: center;
+	width: 13.6%;
+    
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+.weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+.weekdays li, .days li {width: 12.5%;}
+.days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+.weekdays li, .days li {width: 12.2%;}
+}
+
+
+
+/*Add Event Button Styling */
+.button {
+	color: white;
+	background-color: Green; 
+	border: none;
+
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+    
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+    
+	padding: 16px 32px;
+	margin: 4px 2px;
+    
+}
+
+/*Add Event button colors*/
+.events {
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+}
+/*Hover Event for the Add Event Button*/
+.events:hover {
+	background-color: #555555;
+	color: white;
+}
+
+
+/*Event Popup menu*/
+.modal {
+	position: fixed;
+	width: 60%;
+	height: 90%;
+	left: 45%;
+	top: 25%; 
+	margin-left: -25%;
+	margin-top: -10%;
+	background-color: lightgray;
+	text-align: center;
+	opacity: 0;/*set this to 1 to make it visible*/
+	z-index: -1;/*set this to 0 to make it un-clickable*/
+	border-style: double;
+	border-width: 20px;
+	border-color: black;
+
+
+
+}
+
+/*NOT SURE WHERE THIS IS CHANGING*/
+p {
+	color: blue;
+	font-size: 30px;
+	position: relative;
+	top: -30px;
+}
+
+/*Day Number Modifier*/
+.day{
+	font-size: 3vw;
+	text-align: left;
+
+}
+/*Day Weather Modifier*/
+.WC{
+
+	font-size: 1.25vw;
+	text-align: left;
+
+
+
+}
+
+#WID{
+
+}
+
+.event{
+	font-size: 1.25vw;
+	text-align: left;
+
+}
+#firstName, #lastName, #blank{
+	font-size: 200%;
+	display: inline;
+
+
+}
+
+.weatherResponse{
+	background-color: green;
+}
+
+
+
