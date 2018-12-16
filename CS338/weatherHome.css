@@ -1,0 +1,165 @@
+h1 {
+    text-align: center;
+    font-size: 300%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: 2px 2px orange;
+    color: yellow;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2.name{
+    font-size: 50px;
+    color: blue;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.errorBar{
+    color: red;
+    text-align: center;
+    padding-right: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+   	width: 100%;
+   	padding: 12px 20px;
+   	margin: 8px 0;
+   	display: inline-block;
+   	border: 1px solid #ccc;
+   	box-sizing: border-box;
+
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.optionsBar {
+    overflow: hidden;
+    padding-right: 16px;
+}
+
+.optionsBar button.login {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    margin: 8px 0;
+    width: 75px;
+    background-color: gray;
+}
+
+.optionsBar button.account {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    margin: 8px 8px;
+    width: 120px;
+    background-color: gray;
+}
+
+.optionsBar button.reset {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    margin: 8px 8px;
+    width: 130px;
+    background-color: gray;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 300px; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
